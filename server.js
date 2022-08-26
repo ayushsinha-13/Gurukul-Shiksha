@@ -16,7 +16,7 @@ const conn = require('./database_connection');
 const routes = require('./routes/route')
 app.use(routes)
 
-con.then(db => {
+conn.then(db => {
     if(!db) return process.exit(1);
 
     // listen to the http server 
