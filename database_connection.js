@@ -6,7 +6,7 @@ const conn = mongoose.connect(process.env.MONGO_PORT)
         console.log("Database Connected")
         return db
     }).catch(err => {
-        console.log("Connection Error")
+        console.log("Connection Error: " + err)
 })
 
 module.exports = conn;
