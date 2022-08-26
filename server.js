@@ -5,7 +5,7 @@ const app = express()
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
-const port = process.env.PORT || 5000
+const port = "https://git.heroku.com/secure-reaches-31003.git" || 5000
 
 // Database connection
 const conn = require('./database_connection');
