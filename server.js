@@ -14,5 +14,5 @@ const routes = require('./routes/route')
 app.use(routes)
 
 app.listen(port,()=>{
-    console.log(`Server running at PORT 3000`)
+    console.log(`Server running at PORT ${port}`)
 })
