@@ -3,6 +3,11 @@ const controller = require('../controllers/controller')
 
 const app = express()
 
+app.route('/')
+    .get((req,res)=>{
+        res.send("Server Started")
+    })
+
 app.route('/login')
     .post(controller.login_user)
 
